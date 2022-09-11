@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="starfn">
+        <div>
+            <h1>Menu</h1>
+            <button class="abg">
+                <div class="hamburger">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            </button>
+        </div>
+        <nav class="navs">
+            <ul>
+                <li class="submenu">
+                    <button class="btnsm">Admin</button>
+                    <ul class="abgm">
+                        <li><a href="/adcate">Categoria <span class="icon"></span></a></li>
+                        <li><a href="/adcaca">Categoria Caso<span class="icon"></span></a></li>
+                        <li><a href="/usca">User Caso<span class="icon"></span></a></li>
+                        <li><a href="/adfrml">Formularios<span class="icon"></span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/start"><span class="icon">Inicio</span></a></li>
+                <li><a href="/categoria"><span class="icon">Categoria</span></a></li>
+                <li><a href="/avances"><span class="icon">avances </span></a></li>
+                <li><a href="/frml"><span class="icon">Formularios </span></a></li>
+                <li><a href="/qsomos"><span class="icon">Quienes Somos</span></a></li>
+                <li class="pull-right">
+                    <div class="alin">
+                        <ul>
+                            <li><span>Bienvenido: </span></li>
+                            <li><img src="{{current_user.avatar}}" alt="" style="width: 20px; height: 20px;"></li>
+                            <li><button class="btnlogout"><a href="/logout">Logout</a></button></li>
+                            <li><button class="btnloginin"><a class="nav-link" href="loginin">Login In</a></button></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
